@@ -24,6 +24,11 @@ run:
 	cd www/ && \
 	npm run start
 
+build-run:
+	wasm-pack build && \
+	cd www/ && \
+	npm run start
+
 test:
 	wasm-pack test --firefox --headless
 
